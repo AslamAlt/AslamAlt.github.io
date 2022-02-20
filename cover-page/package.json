@@ -1,6 +1,7 @@
 {
   "name": "cover-page",
   "version": "0.1.0",
+  "homepage": "https://aslamalt.github.io",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
@@ -10,6 +11,7 @@
     "@types/node": "^16.11.25",
     "@types/react": "^17.0.39",
     "@types/react-dom": "^17.0.11",
+    "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",
@@ -20,6 +22,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
