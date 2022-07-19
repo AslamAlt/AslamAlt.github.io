@@ -1,11 +1,21 @@
 import * as React from "react";
-import Button from "@mui/material/Button";
 import { NavBar } from "./NavBar";
+import { About } from "./About";
+import { Projects } from "./Projects";
+import { Container } from "@mui/material";
+import Introduction from "./Introduction";
+import "./App.css";
 
 const App = (): React.ReactElement => (
   <>
     <NavBar />
-    <Button>Hello World</Button>
+    {/* <Introduction /> */}
+    <Container maxWidth="md">
+      <div style={{ padding: "1rem", marginTop: "10%" }}>
+        <About />
+        <Projects />
+      </div>
+    </Container>
   </>
 );
 
