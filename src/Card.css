@@ -1,0 +1,11 @@
+.card {
+  border-radius: 1rem;
+  background-color: rgb(252, 243, 233);
+  padding: 2rem;
+  transition: 0.3s;
+}
+
+.card:hover {
+  background-color: antiquewhite;
+  box-shadow: 0 0 5px rgb(250, 169, 18);
+}
