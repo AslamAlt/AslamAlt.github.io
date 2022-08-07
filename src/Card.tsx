@@ -1,8 +1,15 @@
 import React from "react";
-import "./Card.css";
+import "./Card.scss";
 
+export const bg = "rgb(252, 243, 233)";
 export const Card = ({
   children,
+  style,
 }: {
   children: React.ReactElement[];
-}): React.ReactElement => <div className="card">{children}</div>;
+  style?: React.CSSProperties;
+}): React.ReactElement => (
+  <div className="card" style={style}>
+    {children}
+  </div>
+);
